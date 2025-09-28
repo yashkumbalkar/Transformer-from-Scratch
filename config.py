@@ -1,0 +1,20 @@
+D_MODEL = 512 # Dimension of input token representation - embeddings
+VOCAB_SIZE = 10000 # Number of tokens in vocabulary
+MAX_SEQ_LEN = 128 # Maximum Sequence Length of Input Sequence (increased for text classification)
+NUM_LAYERS = 6 # Number of encoder layers (removed decoder for classification)
+ATTN_DROPOUT = 0.1 # Quantify the dropout of how much in attention
+EPS = 1e-6 # A small value to avoid zero division error while normalization
+FF_DROPOUT = 0.1 # How much dropout in FFN
+NUM_HEADS = 8 # Number of attention heads
+RES_DROPOUT = 0.1 # Dropout for residual connection
+TOKENIZER_PATH = "tokenizer.json" # Tokenizer path
+DATASET_ID = "dair-ai/emotion" # Dataset ID from HuggingFace
+SRC_CLN_NAME = "text" # Source column name
+TGT_CLN_NAME = "label" # Target column name
+NUM_CLASSES = 6 # Number of emotion classes (sadness, joy, love, anger, fear, surprise)
+#LOG_DIR = "logs/v1" # Logging dir
+BATCH_SIZE = 32 # Number of samples per batch
+LR = 2e-5 # Learning Rate for optimizer
+NUM_EPOCHS = 10 # Number of training epochs
+MODEL_SAVE_PATH = "transformer_emotion_classifier" # Model save path
+
