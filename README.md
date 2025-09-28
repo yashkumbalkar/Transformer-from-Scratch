@@ -1,5 +1,6 @@
 ## 📁 Project Structure
 
+```
 ├── config.py                      # Configuration parameters for model and training
 ├── input_embedding.py             # Token + positional embedding layer
 ├── multi_head_attention.py        # Multi-head self-attention mechanism
@@ -12,7 +13,7 @@
 ├── train_utils.py                 # Utilities for training (schedulers, metrics, etc.)
 ├── train.py                       # Training script for the classifier
 ├── inference.py                   # Inference script for predicting emotions from text
-
+```
 
 
 
